@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head></h:head>
+<body>
+<h:form id="inputForm">
+<div>
+<h:outputLabel for="fromCurrency" value="From Currency" />
+<h:inputText id="fromCurrency" value="#{exchangeCurrenciesModel.fromCurrencyCode}" />
+</div>
+<div>
+<h:outputLabel for="amount" value="Amount" />
+<h:inputText id="amount" value="#{exchangeCurrenciesModel.amount}" />
+</div>
+<div>
+<h:outputLabel for="toCurrency" value="To Currency" />
+<h:inputText id="toCurrency" value="#{exchangeCurrenciesModel.toCurrencyCode}" />
+</div>
+<h:commandButton id="obtainQuoteAction" value="Obtain Quote" action="#{exchangeCurrenciesModel.obtainQuote}" />
+<div>
+<h:outputText id="quote" value="#{exchangeCurrenciesModel.quote}" rendered="#{exchangeCurrenciesModel.quote != null}" />
+</div>
+</h:form>
+</body>
+</html>
