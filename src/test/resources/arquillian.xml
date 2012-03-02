@@ -6,14 +6,5 @@
 	</engine>
 	<!-- Managed JBoss configuration -->
 	<container qualifier="jbossas7" default="true">
-		<configuration>
-			<property name="jbossHome">D:\Apps\jboss-as-7.1.0.Final</property>
-			<property name="javaHome">C:\Java\jdk1.6.0_26</property>
-			<property name="modulePath">D:\Apps\jboss-as-7.1.0.Final\modules</property>
-		</configuration>
 	</container>
-	<!-- Firefox Driver configuration -->
-	<extension qualifier="webdriver">
-		<property name="implementationClass">org.openqa.selenium.firefox.FirefoxDriver</property>
-	</extension>
 </arquillian>
