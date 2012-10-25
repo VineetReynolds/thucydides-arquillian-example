@@ -142,4 +142,28 @@ public class ArquillianListener implements StepListener {
 
 	}
 
+    @Override
+    public void lastStepFailed(StepFailure arg0) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void stepIgnored(String arg0) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void stepPending(String arg0) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void testFailed(TestOutcome arg0, Throwable arg1) {
+        // TODO Auto-generated method stub
+        
+    }
+
 }
