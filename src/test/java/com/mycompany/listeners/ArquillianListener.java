@@ -38,18 +38,7 @@ public class ArquillianListener implements StepListener {
 	
 		try
 		{
-			if(paramClass.equals(currentClass.get()))
-			{
-				/*
-				 * Suite started for the provided test class. Therefore, return immediately.
-				 * This looks like a bug in Thucydides core - a suite should have been initialized once per class.
-				 */
-				return;
-			}
-			else
-			{
-				currentClass.set(paramClass);
-			}
+		    currentClass.set(paramClass);
 			if(adaptor.get() == null)
 			{
 				adaptor.set(TestRunnerAdaptorBuilder.build());
